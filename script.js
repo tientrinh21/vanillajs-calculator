@@ -9,14 +9,23 @@ class Calculator {
 		this.previousOperand = ''
 		this.currentOperand = ''
 		this.operation = undefined
+		this.computed = false
 	}
 
 	delete() {
+		if (this.computed) {
+			this.currentOperand = ''
+			this.computed = false
+		}
 		if (this.currentOperand === '') return
 		this.currentOperand = this.currentOperand.toString().slice(0, -1)
 	}
 
 	appendNumber(number) {
+		if (this.computed) {
+			this.currentOperand = ''
+			this.computed = false
+		}
 		if (number === '.' && this.currentOperand.includes('.')) return
 		this.currentOperand = this.currentOperand.toString() + number.toString()
 	}
@@ -53,6 +62,7 @@ class Calculator {
 		this.previousOperand = ''
 		this.currentOperand = result
 		this.operation = undefined
+		this.computed = true
 	}
 
 	// Example: 10000 => 10,000

@@ -10,7 +10,6 @@
 /* Component */
 
 body {
-	background: rgb(0, 143, 255);
 	background: linear-gradient(90deg, rgba(0, 143, 255, 1) 0%, rgba(255, 0, 220, 1) 100%);
 }
 
@@ -48,7 +47,7 @@ body {
 	align-items: flex-end;
 	padding: 10px;
 	height: auto;
-	min-height: 150px;
+	min-height: 180px;
 	border-bottom: solid 5px white;
 }
 
