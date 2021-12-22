@@ -22,12 +22,12 @@ body {
 
 .calculator-grid {
 	display: grid;
-	grid-template-columns: repeat(4, 100px);
+	grid-template-columns: repeat(4, 80px);
 	border: solid 8px white;
 }
 
 .calculator-grid > button {
-	height: 100px;
+	height: 80px;
 	background-color: rgba(255, 255, 255, 0.75);
 	border: solid 1px white;
 	font-size: 1.5rem;
@@ -47,7 +47,7 @@ body {
 	align-items: flex-end;
 	padding: 10px;
 	height: auto;
-	min-height: 180px;
+	min-height: 150px;
 	border-bottom: solid 5px white;
 }
 
